@@ -1,0 +1,57 @@
+
+<h1>My Button By Unocss</h1>
+<div id="app"></div>
+<link rel="stylesheet" href="../../dist/assets/entry.c254b061.css">
+<script type="module">
+    import {createApp} from "vue/dist/vue.esm-bundler.js"
+    import  SmartyUI, { 
+         SFCButton,
+         JSXButton,
+         SButton
+        
+        } from '../../dist/smarty-ui.mjs'    
+    createApp({
+        template: `
+        <div>
+           <SButton color="blue">
+           蓝色按钮
+           </SButton>
+           <SButton color="green">
+           绿色按钮
+           </SButton>
+           <SButton color="gray">
+           灰色按钮
+           </SButton>
+           <SButton color="yellow">
+           黄色按钮
+           </SButton>
+           <SButton color="red">
+           红色按钮
+           </SButton>
+        </div>
+        <div>
+        <SButton color="blue" size="medium">蓝色按钮</SButton>
+        <SButton color="green" size="medium">绿色按钮</SButton>
+        <SButton color="gray" size="medium">灰色按钮</SButton>
+        <SButton color="yellow" size="medium">黄色按钮</SButton>
+        <SButton color="red" size="medium">红色按钮</SButton>
+       </div>
+
+       <div>
+       <SButton color="blue" size="large">蓝色按钮</SButton>
+       <SButton color="green" size="large">绿色按钮</SButton>
+       <SButton color="gray" size="large">灰色按钮</SButton>
+       <SButton color="yellow" size="large">黄色按钮</SButton>
+       <SButton color="red" size="large">红色按钮</SButton>
+      </div>
+
+
+      <div>
+      <SButton color="blue" size="large" icon="search"></SButton>
+      <SButton color="green" size="large" icon="edit"></SButton>
+      <SButton color="gray" size="large" icon="check"></SButton>
+      <SButton color="yellow" size="large" icon="message"></SButton>
+      <SButton color="red" size="large" icon="share"></SButton>
+     </div>
+        `}).use(SmartyUI).mount('#app')
+</script>
