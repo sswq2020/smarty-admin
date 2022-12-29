@@ -193,7 +193,10 @@ lianxi@lianxideMacBook-Air smarty-ui-vite % pnpm lint
 ```
 
 
-
+## Git Actions不生效的问题
+- 现象自己生成的.github/workflows/xxx.yml不生效
+- 具体原因尚未确定
+- 解决方法 在Github官网Action里直接生成.github/workflows/xxx.yml，拉到本地。本地yml文件直接copy过去
 
 
 
