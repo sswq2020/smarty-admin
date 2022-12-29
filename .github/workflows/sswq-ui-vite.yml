@@ -3,11 +3,11 @@ name: Publish ssqwq-ui-vite To Npm
 on:
   push:
     branches: [publish-sswq-ui-vite]
-s
+
 jobs:
   publish:
     runs-on: ubuntu-latest
-s
+
     name: "publish npm"
 
     environment: npm
