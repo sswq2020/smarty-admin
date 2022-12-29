@@ -200,6 +200,9 @@ lianxi@lianxideMacBook-Air smarty-ui-vite % pnpm lint
 
 
 
-
+## sswq-ui-vite.yml
+- ${{ secrets.GITHUB_TOKEN }} 配置请查看https://zhuanlan.zhihu.com/p/99080287
+- ${{ secrets.NPM_AUTH_TOKEN }}  NPM_AUTH_TOKEN是由npm的个人账号生成，再到https://github.com/sswq2020/smarty-admin/settings/secrets/actions 去配置
+- 虽然说2个变量都是在Github里配置，确实不同的地方生成，看文档注意吧
 
 
