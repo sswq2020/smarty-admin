@@ -27,11 +27,12 @@ export default defineConfig({
     cssCodeSplit: true,
     lib: {
       entry: './src/entry.ts',
-      name: 'SmartyUI',
-      fileName: 'smarty-ui',
+      name: 'SswqUI',
+      fileName: 'sswq-ui',
       // 导出模块格式
       formats: ['es','esm',"umd", "iife"]
-    }
+    },
+    outDir:'./dist'
   },
   test: {
     // enable jest-like global test APIs
