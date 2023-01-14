@@ -205,4 +205,15 @@ lianxi@lianxideMacBook-Air smarty-ui-vite % pnpm lint
 - ${{ secrets.NPM_AUTH_TOKEN }}  NPM_AUTH_TOKEN是由npm的个人账号生成，再到https://github.com/sswq2020/smarty-admin/settings/secrets/actions 去配置
 - 虽然说2个变量都是在Github里配置，确实不同的地方生成，看文档注意吧
 
+## 为啥要写build.ts的原因
+- 现在需要实现按需倒入，因此需要将组件分包，那打包脚本就需要修改
+
+- 组件分包就是单独导出组件需要使用Vue的插件写法。
+
+- 默认导出方式是通过配置 vite.config.ts 的 ~build~ 属性完成。但是在分包导出的时候需要每个组件都分别配置自己的配置文件，而且需要由程序自动读取组件文件夹，根据文件夹的名字遍历打包，还需要为每个子组件包配上一个 package.json 文件。
+
+- 使用fs-extra替代原生得fs库
+
+- 编译build.ts的工具用esno。作用与ts-node一样，但是更快。具体详细https://blog.csdn.net/u012384510/article/details/122974932
+
 

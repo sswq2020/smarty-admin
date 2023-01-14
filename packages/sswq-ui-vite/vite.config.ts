@@ -1,8 +1,9 @@
 /// <reference types="vitest" />
-import { defineConfig } from 'vite';
+import { defineConfig, Plugin } from 'vite';
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import Unocss from './config/unocss'
+import { UserConfig } from 'vite';
 
 const rollupOptions = {
   external: ['vue', 'vue-router'],
@@ -13,11 +14,11 @@ const rollupOptions = {
   }
 }
 
-export default defineConfig({
+export const config = {
   plugins: [
-    vue(),
-    vueJsx({}),
-    Unocss()
+    vue() as Plugin,
+    vueJsx({}) as Plugin,
+    Unocss() as Plugin[]
   ],
   build: {
     rollupOptions,
@@ -45,4 +46,6 @@ export default defineConfig({
       web: [/.[tj]sx$/]
     }
   }
-})
+}
+// https://vitejs.dev/config/
+export default defineConfig(config as UserConfig)
