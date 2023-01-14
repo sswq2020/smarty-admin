@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sswq-ui-vite": "workspace:^1.0.1"
+    "sswq-ui-vite": "workspace:^1.0.4"
   }
 }
