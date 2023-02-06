@@ -10,7 +10,7 @@ importers:
 
   packages/docs-vite:
     specifiers:
-      sswq-ui-vite: workspace:^1.0.4
+      sswq-ui-vite: workspace:^1.0.5
     dependencies:
       sswq-ui-vite: link:../sswq-ui-vite
 

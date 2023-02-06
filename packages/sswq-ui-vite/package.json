@@ -1,8 +1,9 @@
 {
   "name": "sswq-ui-vite",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
+  "homepage": "https://smarty-admin-sswq-ui-vite.vercel.app/",
   "scripts": {
     "dev": "vite",
     "build": "pnpm build:components",
