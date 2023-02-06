@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "",
   "main": "index.js",
+  "homepage": "https://smarty-admin-sswq-ui-vite.vercel.app/",
   "scripts": {
     "dev": "vite",
     "build": "pnpm build:components",
