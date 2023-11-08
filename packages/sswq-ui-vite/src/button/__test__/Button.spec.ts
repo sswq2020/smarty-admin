@@ -81,3 +81,17 @@ describe("color", () => {
     expect(wrapper.props("loading")).toBe(true);
   });
 });
+
+describe("icon",()=>{
+  test("icon-search",()=>{
+    const wrapper = shallowMount(Button,{
+     slots:{
+       default:'Button',
+     },
+     props:{
+       icon:'search',
+     },
+    });
+    expect(wrapper?.element?.innerHTML?.indexOf('i-ic-baseline-search')).toBeGreaterThan(-1);
+   })
+})
